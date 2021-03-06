@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+}
+
+.block {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  background: #000;
+}
+
+.section_1 {
+  flex: 1 2 calc(100vw - 380px);
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background-image: url("img/uljsd.png");
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+}
+
+.section_2 {
+  height: auto;
+  margin-top: auto;
+  margin-bottom: 2.4vw;
+  margin-right: 2.5vw;
+  /*width: 20vw;*/
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(71,72,71, .3);
+}
+
+.section_2 hr {
+  background: rgba(255, 255, 255, .1);
+  height: 1px;
+  margin: 20px 0;
+}
+
+/* Main block*/
+.main_block {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 100%;
+}
+.info {
+  flex: 0 1 40%;
+}
+
+h1.info_title {
+  font-size: 5vw;
+}
+h1.info_title b {
+  color: darkorange;
+}
+
+p.info_desc {
+  font-size: 2vw;
+}
+
+/*Contacts*/
+.contacts {
+  display: flex;
+  margin-top: 10px;
+}
+.contacts li:not(:last-child) a {
+  margin-right: 10px;
+}
+
+.contacts i {
+  padding: 5px;
+}
+.contacts i:hover {
+  color: darkorange;
+  transition: 0.3s;
+}
+
+/*Nav*/
+.nav {
+  flex: 0 1 100%;
+  position: absolute;
+  bottom: 3vw;
+  right: 3vw;
+  display: flex;
+}
+
+.nav a {
+  padding: 10px 25px;
+  margin: 5px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 5px;
+  font-size: 2vh;
+}
+
+.nav a:hover {
+  background: rgba(71,72,71, .3);
+}
+
+.nav li.active a {
+  color: darkorange;
+  border: 1px solid rgba(255,107,0, .2);
+  background: rgba(71,72,71, .3);
+}
+
+
+/*Section_2*/
+
+.section_2 h1, .section_2 h2{
+  color: darkorange;
+  margin-bottom: 20px;
+}
+
+.section_2 h2, .section_2 h1:not(:first-child) {
+  margin-top: 20px;
+}
+/*About*/
+
+.education li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+}
+.education li:not(:first-child) {
+  margin-top: 10px;
+}
+.education li p {
+  text-align: right;
+}
+.education li i {
+  width: 10px;
+  height: 10px;
+  margin: 4px auto;
+  /*background: #ecb830;*/
+  border-radius: 50%;
+  border: 1px solid #ecb830;
+}
+
+.education span {
+  font-size: 10px;
+  color: #ecb830;
+}
+
+.education b {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1vw;
+}
+.hobbies li {
+  text-align: center;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.hobbies li img {
+  display: block;
+  height: 30px;
+  width: 50px;
+  margin: 0 auto;
+}
+.hobbies li span {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/*Exp*/
+
+.exp_list {
+}
+.exp_list li {
+  padding-left: 30px;
+  margin-left: 16px;
+  position: relative;
+}
+.exp_list li:not(:last-child) {
+  border-left: 1px solid darkorange;
+  padding-bottom: 10px;
+
+}
+.exp_list li:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  margin: 4px auto;
+  display: block;
+  position: absolute;
+  left: -7px;
+  top: -5px;
+  border-radius: 50%;
+  border: 1px solid #ecb830;
+  background: #151615;
+}
+.exp_list li:not(:last-child):before {
+  left: -9px;
+}
+
+.exp_list li span, .skills_list li span {
+  color: #ecb830;
+  font-size: 10px;
+}
+
+/*Skills*/
+
+.skills_list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.skills_list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.skills_list li p {
+  margin: 0 5px;
+  font-size: 14px;
+}
+.skills_list li img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/*Portfolio*/
+
+.portfolio_item a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.portfolio_item a:hover p {
+  color: darkorange;
+  transition: .3s;
+}
+
+.portfolio_item a:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  border: 5px solid transparent;
+  border-left: 5px solid darkorange;
+  opacity: 0;
+  transition: .3s;
+}
+
+.portfolio_item a:hover:after{
+  opacity: 1;
+}
+
+.portfolio_item a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
