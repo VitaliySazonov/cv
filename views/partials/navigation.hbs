@@ -4,6 +4,14 @@
   {{else}}
     <li class="portfolio"><a href="/portfolio">Portfolio</a></li>
   {{/if}}
-  <li class="exp"><a href="/exp">Experience</a></li>
-  <li class="about"><a href="/about">About</a></li>
+  {{#if isExp}}
+    <li class="exp active"><a href="/exp">Experience</a></li>
+  {{else}}
+    <li class="exp"><a href="/exp">Experience</a></li>
+  {{/if}}
+  {{#if isAbout}}
+    <li class="about active"><a href="/about">About</a></li>
+  {{else}}
+    <li class="about"><a href="/about">About</a></li>
+  {{/if}}
 </ul>

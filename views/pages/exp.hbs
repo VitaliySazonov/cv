@@ -1,11 +1,15 @@
 <section class="section_2">
   <h1>{{this.page.title}}</h1>
   <ul class="exp_list">
-    {{#each this.page.description}}{{{this}}}{{/each}}
+    {{#each this.page.description}}
+      <li><p>{{this.company}}</p><span>{{this.year}}</span></li>
+    {{/each}}
   </ul>
   <hr>
   <h2>{{this.page.title_2}}</h2>
   <ul class="skills_list">
-    {{#each this.page.description_2}}{{{this}}}{{/each}}
+    {{#each this.page.description_2}}
+      <li><img src="{{this.src}}" alt="{{this.skill}}"><p>{{this.skill}}</p> <span>{{this.exp}}</span></li>
+    {{/each}}
   </ul>
 </section>

@@ -4,11 +4,15 @@
   <hr>
   <h2>{{this.page.title_2}}</h2>
   <ul class="education">
-    {{#each this.page.description_2}}{{{this}}}{{/each}}
+    {{#each this.page.description_2}}
+      <li><p>{{this.year}}</p><i></i><span><b>{{this.name}}</b> <br>{{this.city}}</span></li>
+    {{/each}}
   </ul>
   <hr>
   <h2>{{this.page.title_3}}</h2>
   <ul class="hobbies">
-    {{#each this.page.description_3}}{{{this}}}{{/each}}
+    {{#each this.page.description_3}}
+      <li><img src="{{this.url}}" alt=""><span>{{this.title}}</span></li>
+    {{/each}}
   </ul>
 </div>

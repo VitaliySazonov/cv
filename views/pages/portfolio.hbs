@@ -1,6 +1,8 @@
 <section class="section_2">
   <h1>{{this.page.title}}</h1>
   <ul class="portfolio_list">
-    {{#each this.page.description}}{{{this}}}{{/each}}
+    {{#each this.page.description}}
+      <li class="portfolio_item"><a href="{{this.href}}" target="_blank"><img src="{{this.src}}" alt="{{this.domain}}"><p>{{this.domain}}</p></a></li>
+    {{/each}}
   </ul>
 </section>
