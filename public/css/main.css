@@ -23,7 +23,7 @@
   align-content: center;
   flex-wrap: wrap;
   position: relative;
-  background-image: url("img/uljsd.png");
+  background-image: url("../img/uljsd.png");
   background-repeat: no-repeat;
   background-position: 40% 50%;
 }
