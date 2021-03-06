@@ -1,0 +1,26 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/js/script.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitaliySazonov/cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitaliySazonov/cv/issues"
+  },
+  "homepage": "https://github.com/VitaliySazonov/cv#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
