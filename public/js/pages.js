@@ -54,7 +54,6 @@ const pages = {
       {href: 'https://dribbble.com/', src: 'https://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png', domain: 'dribbble.com'},
       {href: 'https://playcode.io/', src: 'https://playcode.io/lstatic/img/logo.png', domain: 'playcode.io'},
       {href: 'https://quizlet.com/', src: 'https://assets.quizlet.com/a/j/dist/i/favicon.6e263725c926227.ico', domain: 'quizlet.com'},
-      {href: 'http://seasonvar.ru/', src: 'http://cdn.seasonvar.ru/images/fav/favicon.ico', domain: 'seasonvar.ru'},
       {href: 'https://css-tricks.com/', src: 'https://css-tricks.com/favicon.ico', domain: 'css-tricks.com'},
       {href: 'https://materializecss.com/', src: 'https://materializecss.com/images/favicon/apple-touch-icon-152x152.png', domain: 'materializecss.com'},
       {href: 'https://www.protopie.io/', src: 'https://img.apksum.com/28/io.protopie.companion/5.1.0/icon.png', domain: 'protopie.io'},
